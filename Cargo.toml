@@ -10,7 +10,7 @@ keywords = ["tui", "ratatui", "agent", "sse", "easybits"]
 categories = ["command-line-utilities"]
 
 [[bin]]
-name = "ghosty"
+name = "ghosty-tui"
 path = "src/main.rs"
 
 [dependencies]

@@ -3,7 +3,8 @@
 Chat de terminal, mínimo y rápido, para hablar con un agente **ghosty** (rust-ghosty
 y demás templates de chat web de [easybits](https://www.easybits.cloud)) por SSE.
 
-Tokens en vivo, caja de input fija, una sola sesión. El binario se llama `ghosty`.
+Tokens en vivo, caja de input fija, una sola sesión. El binario se llama `ghosty-tui`
+(el nombre `ghosty` ya lo usa Ghosty Code, el CLI de coding).
 
 ```
 ┌ ghosty · 6a297a67… ───────────────────────┐
@@ -25,12 +26,12 @@ Requiere [Rust](https://rustup.rs) (compila desde fuente, ~1 min):
 cargo install --git https://github.com/blissito/ghosty-tui
 ```
 
-Quedará el binario `ghosty` en tu PATH (`~/.cargo/bin`).
+Quedará el binario `ghosty-tui` en tu PATH (`~/.cargo/bin`).
 
 ## Usar
 
 ```bash
-ghosty --agent <agentId> --token <embedToken>
+ghosty-tui --agent <agentId> --token <embedToken>
 ```
 
 `agentId` y `embedToken` salen al crear un agente con el MCP de easybits
@@ -42,7 +43,7 @@ Fallback por entorno:
 ```bash
 export GHOSTY_AGENT=<agentId>
 export GHOSTY_TOKEN=<embedToken>
-ghosty
+ghosty-tui
 ```
 
 ### Headless (pipes / scripts)
@@ -50,7 +51,7 @@ ghosty
 Un turno, tokens a stdout, sin TUI:
 
 ```bash
-ghosty --agent <id> --token <embedToken> --once "¿qué eres en una frase?"
+ghosty-tui --agent <id> --token <embedToken> --once "¿qué eres en una frase?"
 ```
 
 ## Teclas

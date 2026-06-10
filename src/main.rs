@@ -77,8 +77,8 @@ fn print_help() {
     println!(
         "ghosty-tui — chat en terminal con un agente rust-ghosty\n\n\
          USO:\n  \
-           ghosty --agent <id> --token <embedToken> [--session <id>]\n  \
-           ghosty --agent <id> --token <embedToken> --once \"mensaje\"   (headless, sin TUI)\n\n\
+           ghosty-tui --agent <id> --token <embedToken> [--session <id>]\n  \
+           ghosty-tui --agent <id> --token <embedToken> --once \"mensaje\"   (headless, sin TUI)\n\n\
          ENV (fallback):\n  \
            GHOSTY_AGENT, GHOSTY_TOKEN\n\n\
          TECLAS:\n  \
